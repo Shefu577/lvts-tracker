@@ -1,0 +1,34 @@
+.banner {
+    background-image: url("../../resources/LogoRiya\ -\ Copy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .banner > h1 {
+    margin: 5vmax;
+    margin-top: 10px;
+  
+    font: 600 2.5vmax "Roboto";
+  }
+  
+  .banner > p {
+    font: 300 1.4vmax "Lucida Sans";
+  }
+
+.app{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}  
+
+  
