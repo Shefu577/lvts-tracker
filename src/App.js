@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import WebFont from "webfontloader";
 import React from 'react';
-import Home from "./component/Home/Home.js";
+import Home from "./component/Home/Home";
 import Abiout from './component/About/abiout';
 import Form from './component/signup/Form';
 import Loginpg from '../src/component/Login/Login';

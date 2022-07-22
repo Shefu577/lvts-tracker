@@ -24,7 +24,7 @@ const Abiout = () => {
                             We are using MongoDB Atlas for cloud storage backup and MongoDB Compass fetching details.   
                             </p>
                             <div class="button">
-                                <a href = "">Read More</a>
+                                <a>Read More</a>
                             </div>
                         </div>
                     </div>

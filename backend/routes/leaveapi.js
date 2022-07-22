@@ -78,9 +78,9 @@ router.get('/getleaves', async (req, res) => {
 
 const transporter = nodemailer.createTransport({
     service : 'gmail',
-    tls :{
-      rejectUnauthorized: false
-    },
+    // tls :{
+    //   rejectUnauthorized: false
+    // },
     auth: {
       user: 'lvts127@gmail.com',
       pass: 'lvtsmca@22'
@@ -92,7 +92,8 @@ router.put('/statusupdate', async (req, res) => {
     
     let success = false;
     
-    const id = mongoose.Types.ObjectId(req.body.id);
+    // const id = mongoose.Types.ObjectId(req.body.id);
+    const id = req.body.id;
     const status = req.body.status;
     const email = req.body.email;
 
@@ -101,6 +102,8 @@ router.put('/statusupdate', async (req, res) => {
         const data = await Leave.findOneAndUpdate({ _id: id},{status: status})
         success = true;
         //email send
+
+       
 
         transporter.sendMail({
             from:"lvts127@gmail.com",
@@ -114,7 +117,7 @@ router.put('/statusupdate', async (req, res) => {
             else
               
               console.log('Mail Sent', response) 
-              abort("Mail Sent")             
+            //   alert("Mail Sent")             
           })
         return res.status(200).json({success})
         
